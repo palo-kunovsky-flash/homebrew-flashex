@@ -17,7 +17,7 @@ cask "flashex" do
   # Flashex updates itself (signed updates, see the app's README).
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Flashex.app"
   # The `flashex` command (agent hooks, notifications, splits from scripts).
