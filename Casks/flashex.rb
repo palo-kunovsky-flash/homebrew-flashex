@@ -26,9 +26,8 @@ cask "flashex" do
   # Flashex is ad-hoc signed, not notarized (no paid Apple Developer ID), so
   # Gatekeeper would block the first open of a quarantined copy. Homebrew has
   # already checked the dmg against the sha256 above when this runs.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Flashex.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Flashex.app"]
   end
 
   zap trash: [
