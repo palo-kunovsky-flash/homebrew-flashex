@@ -1,8 +1,8 @@
 cask "flashex" do
   # version and sha256 are written by scripts/update-cask.sh from dist/<version>/
   # in the (private) source repository; do not edit them by hand.
-  version "0.1.3"
-  sha256 "b7ae97a1a92ef269e751f41e147a76203e8138e94cb07620a300d2149bbd6346"
+  version "0.1.4"
+  sha256 "7e1144140476121c3335e4bbe6712b7d4ea9f6832bd51bd14f9866aeb9634f57"
 
   url "https://github.com/palo-kunovsky-flash/flashex-app/releases/download/v#{version}/Flashex-#{version}.dmg"
   name "Flashex"
